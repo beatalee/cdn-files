@@ -49,7 +49,8 @@ def connect(pre_str, l_from='EN',l_go='zh-CHS'):
     if int(data["errorCode"]) != 0:
         return {"response": {"translation": None, "origin_str": q}}
 
-    return {"response": {"translation": data["translation"], "origin_str": q}}
+    return {"response": {"translation": data["translation"], "origin_str": q, "errorCode":data["errorCode"]}}
+
 
 
 def translate_en2cn(content):
