@@ -1,0 +1,1 @@
+NginxConfCollectionName = "nginx_conf"
